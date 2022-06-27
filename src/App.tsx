@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 import { Navigation } from "./components/Navigation";
@@ -9,7 +10,9 @@ function App() {
         <b>Welcome, Developer 👋</b>
         <Navigation />
       </header>
-      <main className="App-content">This is the Home page 🪐</main>
+      <main className="App-content">
+        <Outlet />
+      </main>
     </div>
   );
 }
