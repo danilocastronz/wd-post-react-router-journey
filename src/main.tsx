@@ -10,6 +10,7 @@ import Contact from "./routes/contact";
 import Home from "./routes/home";
 import NotFound from "./routes/notFound";
 import User from "./routes/user";
+import Users from "./routes/users";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -20,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="project" element={<Project />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="user" element={<User />}>
+          <Route path="users" element={<Users />}>
             <Route path=":userID" element={<User />} />
           </Route>
           <Route path="*" element={<NotFound />} />

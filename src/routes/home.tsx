@@ -10,7 +10,7 @@ const Home = () => {
       <h2>Who are you, traveler? 🛸</h2>
       <p>My name is:</p>
       {users.map((user: User) => (
-        <Link to={`/user/${user.id}`} key={user.id}>
+        <Link to={`/users/${user.id}`} key={user.id}>
           {user.name}
         </Link>
       ))}
